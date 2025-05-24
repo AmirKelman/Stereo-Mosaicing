@@ -2,7 +2,7 @@
 
 This project implements a stereo mosaicing pipeline that generates panoramic images from video frames captured with lateral camera motion. It was developed as part of an image processing university course.
 
-## 📽️ Project Goal
+##  Project Goal
 
 To construct wide-view panoramas from stereo video sequences by:
 - Detecting key features
@@ -14,7 +14,7 @@ The pipeline is designed to handle dynamic scenes, camera movement, and varying 
 
 ---
 
-## 🧠 Key Concepts and Techniques
+##  Key Concepts and Techniques
 
 - **SIFT Feature Detection:** Detect robust keypoints using OpenCV's SIFT algorithm.
 - **Feature Matching:** Use FLANN-based matcher with Lowe’s ratio test to find point correspondences between frames.
@@ -27,7 +27,7 @@ The pipeline is designed to handle dynamic scenes, camera movement, and varying 
 
 ---
 
-## 🛠️ Implementation
+##  Implementation
 
 The main pipeline is in `ex4.py` and includes:
 - `get_frames` – Extracts frames from video.
@@ -46,7 +46,7 @@ The main pipeline is in `ex4.py` and includes:
 
 ---
 
-## 🧪 Sample Results
+##  Sample Results
 
 The algorithm was tested on:
 - **trees.mp4** – a dynamic scene with foliage
@@ -58,7 +58,7 @@ See the [📄 report (PDF)](./Image%20Processing%20-%20Exercise%204%20-%20Amir%2
 
 ---
 
-## 📈 Challenges & Future Work
+##  Challenges & Future Work
 
 - **Homography accuracy:** RANSAC tuning is critical to avoid misalignments.
 - **Panorama drift:** Errors accumulate over long sequences.
@@ -69,12 +69,3 @@ See the [📄 report (PDF)](./Image%20Processing%20-%20Exercise%204%20-%20Amir%2
 - Seam-aware blending
 - Adaptive matching thresholds
 
----
-
-## 📁 File Structure
-
-```bash
-.
-├── ex4.py                         # Main stereo mosaicing implementation
-├── Image Processing - Exercise 4 - Amir Kelman.pdf   # Detailed report and analysis
-└── README.md                      # This file
